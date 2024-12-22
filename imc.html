@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>IMC - 15/04/2024</title>
+<<<<<<< HEAD
 	<style>
 		/*cor do relatório*/
 		relatorio1{
@@ -142,6 +143,9 @@
 		
 	</style>
 	
+=======
+	<link rel="stylesheet" href="static/css.css">
+>>>>>>> 02dc267 (corrigindo a estruturação e responsividade com o AI studio)
 </head>
 <body>
 	
@@ -167,51 +171,9 @@
 	
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-	 <a title="O que é IMC?" href="https://pt.wikipedia.org/wiki/%C3%8Dndice_de_massa_corporal">IMC<img id="imagem" src="https://tse1.mm.bing.net/th?id=OIP.7SRxq8GbpqQuHM47z8movQHaHa&pid=Api&P=0&h=180" alt="imagem" height="100" width="100"></a>
-	<script>
-
-		function IMC(){
-			console.log("HI!!")
-			const peso = document.getElementById("peso").value;
-			const altura = document.getElementById("altura").value;
-			const imc = (peso/(altura**2)).toFixed(2)
-			var mensagem_de_erro = ('Foram inseridos dados inválidos. Use seu peso e altura.\n')
-		if (imc > 15 && imc <51){
-			if (imc < 18.5){
-				document.querySelector("relatorio1").innerHTML = "Classificado como: Abaixo do peso"
-				document.querySelector("resultado").innerHTML = "Seu IMC é: " + imc
-	        }
-	        else if (imc >= 18.5 && imc < 25){
-	            document.querySelector("relatorio2").innerHTML = "Classificado como: Peso normal"
-				document.querySelector("resultado").innerHTML = "Seu IMC é: " + imc
-	        }
-	        else if (imc >= 25 && imc < 30){
-	            document.querySelector("relatorio3").innerHTML = 'Classificado como: Sobrepeso'
-				document.querySelector("resultado").innerHTML = "Seu IMC é: " + imc
-	        }
-	        else if (imc >= 30 && imc < 40){
-	            document.querySelector("relatorio4").innerHTML = 'Classificado como: obesedidade'
-				document.querySelector("resultado").innerHTML = "Seu IMC é: " + imc
-	        }
-	        else if (imc >= 40 && imc < 50){
-	            document.querySelector("relatorio5").innerHTML = 'Classificado como: Obesidade grave'
-				document.querySelector("resultado").innerHTML = "Seu IMC é: " + imc
-	        }
-		}else{
-			alert(mensagem_de_erro+"Exemplo: \n\nSe seu peso é 72,35Kg, insira 72.35\nSe sua altura é 1,67m, insira 1.67 .");
-			}
-		}
-
-
-
-	</script>
-<script>
-	$("#btn1").click(function() {
-				
-			  swal("Mensagem!");
-				
-			});
-</script>
+<script src="static/js.js"></script>
+<a target="_blank" title="O que é IMC?" href="https://pt.wikipedia.org/wiki/%C3%8Dndice_de_massa_corporal">IMC<img id="imagem" src="https://tse1.mm.bing.net/th?id=OIP.7SRxq8GbpqQuHM47z8movQHaHa&pid=Api&P=0&h=180" alt="imagem" height="100" width="100" ></a>
+	
 
 	</body>
 </html>
