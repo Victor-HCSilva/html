@@ -1,0 +1,254 @@
+/* Estilos base */
+body {
+    background-image: url("https://media.istockphoto.com/id/1699142078/pt/foto/sunrise-over-sand-dunes-western-sahara-desert-in-morocco.jpg?s=2048x2048&w=is&k=20&c=gKfICiLIi_ME0_YtiCHqXbmcr1v5Auo4YFF_NlQmylM=");
+    background-size: cover;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: #333;
+    margin: 0; /* Removendo margem padrão do body */
+    padding: 20px; /* Adicionando um espaçamento interno */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centralizando os elementos */
+    min-height: 100vh; /* Garante que o body preencha a tela */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: inline-block;
+    background-color: #f5deb3;
+    color: #a0522d;
+    border-radius: 6px;
+    opacity: 100%;
+    font-size: 2.5rem; /* Ajuste para responsividade */
+}
+
+div {
+    display: inline-block;
+    border: solid #a0522d 2px;
+    border-radius: 6px;
+    margin: 2% ; /* Reduzindo a margem */
+    padding: 10px;
+    background-color: rgba(245, 222, 179, 0.8);
+    max-width: 90%; /* Definindo um max-width para dispositivos maiores */
+}
+
+input {
+    border: solid #a0522d 2px;
+    background-color: #ffd700;
+    font-size: 1.8rem;
+    opacity: 100%;
+    border-radius: 6px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 5px 0;
+    padding: 10px;
+    width: calc(100% - 22px); /* Reduzir 2px para a borda e 20px do padding */
+     box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+}
+
+button.botão {
+    border: solid #333 2px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 6px;
+    font-size: 1.8rem;
+    padding: 10px 20px;
+     margin-top: 10px;
+}
+
+button.botão:hover {
+    transition: 0.3s;
+    background-color: #a0522d;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 1.9rem;
+}
+
+resultado {
+    color: #333;
+    display: inline-block;
+    border: 2px solid #a0522d;
+    background-color: #f5deb3;
+    border-radius: 6px;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    max-width: 80%;
+    box-sizing: border-box;
+}
+
+relatorio1 {
+    font-size: 2rem; /* Reduzindo um pouco para telas menores */
+    color: #f7f7f7;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid #a0522d;
+    background-color: #5e361a;
+    border-radius: 6px;
+    margin: 5px 0; /* Adicionando margens */
+    padding: 10px;
+        max-width: 80%;
+        box-sizing: border-box;
+}
+
+relatorio2 {
+    font-size: 2rem;
+    color: #f7f7f7;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid #a0522d;
+    background-color: #2e8b57;
+    border-radius: 6px;
+    margin: 5px 0; /* Adicionando margens */
+    padding: 10px;
+        max-width: 80%;
+        box-sizing: border-box;
+}
+
+relatorio3 {
+    font-size: 2rem;
+    color: #f7f7f7;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid #a0522d;
+    background-color: #5e361a;
+    border-radius: 6px;
+    margin: 5px 0; /* Adicionando margens */
+        padding: 10px;
+        max-width: 80%;
+        box-sizing: border-box;
+}
+
+relatorio4 {
+    font-size: 2rem;
+    color: #f7f7f7;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid #a0522d;
+    background-color: #d2691e;
+    border-radius: 6px;
+    margin: 5px 0; /* Adicionando margens */
+     padding: 10px;
+        max-width: 80%;
+        box-sizing: border-box;
+}
+
+relatorio5 {
+    font-size: 2rem;
+    color: #f7f7f7;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid #a0522d;
+    background-color: #b22222;
+    border-radius: 6px;
+        margin: 5px 0; /* Adicionando margens */
+     padding: 10px;
+        max-width: 80%;
+        box-sizing: border-box;
+}
+
+img {
+    border-radius: 100%;
+    border: 3px solid #d2691e;
+    max-width: 100px;
+     height: auto;
+    display: block; /* Remove espaços extras ao redor da imagem */
+    margin: 10px auto; /* Centraliza a imagem */
+}
+img:hover {
+     transition: 0.3s;
+    border: 3px #a0522d solid;
+}
+
+a {
+    font-size: 1.4rem;
+    color: #2e8b57;
+    display: inline-block; /* Para centralizar */
+    margin-top: 20px;
+}
+
+a:hover {
+    position: initial;
+    transition: 0.3s;
+    font-size: 1.5rem;
+    color: #a0522d;
+}
+
+
+/* Estilos para telas menores (smartphones) */
+@media (max-width: 767px) {
+    body {
+        padding: 10px; /* Reduzindo o padding */
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    div {
+        margin: 2% ; /* Margens menores */
+        padding: 5px;
+    }
+     input,
+     button.botão,
+        resultado,
+        relatorio1,
+         relatorio2,
+        relatorio3,
+        relatorio4,
+        relatorio5  {
+        font-size: 1.4rem; /* Fontes menores */
+    }
+
+     input {
+        padding: 8px; /* Reduzindo o padding */
+          margin: 5px 0;
+     }
+    
+     button.botão {
+         padding: 8px 15px; /* Reduzindo padding do botão */
+     }
+
+      img {
+            max-width: 70px; /* Reduzir tamanho da imagem */
+        }
+    
+}
+
+/* Estilos para telas médias (tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        padding: 15px; /* Um pouco menos padding */
+    }
+        input,
+        button.botão,
+        resultado,
+        relatorio1,
+        relatorio2,
+        relatorio3,
+        relatorio4,
+        relatorio5 {
+        font-size: 1.6rem;
+    }
+}
+
+/* Estilos para telas grandes (desktops) */
+@media (min-width: 1024px) {
+   
+    div {
+        margin: 5% ; /* Margem maior para telas grandes */
+    }
+        input,
+        button.botão,
+        resultado,
+        relatorio1,
+        relatorio2,
+        relatorio3,
+        relatorio4,
+        relatorio5  {
+        font-size: 1.8rem; /* Aumentar um pouco o tamanho da fonte */
+    }
+}
